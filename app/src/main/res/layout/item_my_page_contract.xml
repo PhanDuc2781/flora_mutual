@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="12dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="9dp">
+
+        <com.cmd.flora.base.BaseTextview
+            android:id="@+id/btn_member_status"
+            android:layout_width="0dp"
+            android:layout_height="38dp"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="17dp"
+            android:background="@drawable/bg_button_green_19"
+            android:gravity="center"
+            android:text="@string/membership_status"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.cmd.flora.base.BaseTextview
+            android:id="@+id/tv_points_held"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="17dp"
+            android:text="@string/points_held"
+            android:textColor="@color/tab_selected_color"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_member_status" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="2dp"
+            android:src="@drawable/ic_point_large"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_coin"
+            app:layout_constraintEnd_toStartOf="@+id/tv_coin"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv_coin" />
+
+        <com.cmd.flora.base.BaseTextview
+            android:id="@+id/tv_coin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:ellipsize="end"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:paddingBottom="2dp"
+            android:text="1,000pt"
+            android:textColor="@color/black"
+            android:textSize="40dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/imageView5"
+            app:layout_constraintTop_toBottomOf="@+id/tv_points_held" />
+
+        <View
+            android:id="@+id/line_page"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="19dp"
+            android:background="#E5E5E5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_coin" />
+
+        <com.cmd.flora.base.BaseTextview
+            android:id="@+id/tv_contract_details"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="17dp"
+            android:text="@string/contract_details"
+            android:textColor="@color/tab_selected_color"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/line_page" />
+
+        <com.cmd.flora.base.BaseTextview
+            android:id="@+id/tv_contract_plan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_grey_border20"
+            android:gravity="center"
+            android:paddingHorizontal="14dp"
+            android:paddingVertical="7dp"
+            android:text="@string/contract_plan"
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_contract_details" />
+
+        <com.cmd.flora.base.BaseTextview
+            android:id="@+id/tv_peace_of_mind"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="4dp"
+            android:gravity="center"
+            android:paddingVertical="5dp"
+            android:text="@string/peace_of_mind_A"
+            android:textColor="@color/black"
+            android:textSize="26dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_contract_plan" />
+
+        <com.cmd.flora.base.BaseTextview
+            android:id="@+id/tv_current_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="start"
+            android:lineSpacingMultiplier="1.5"
+            android:paddingVertical="3dp"
+            android:text="@string/txt_current_number"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            app:layout_constraintEnd_toEndOf="@+id/tv_peace_of_mind"
+            app:layout_constraintStart_toStartOf="@+id/tv_peace_of_mind"
+            app:layout_constraintTop_toBottomOf="@+id/tv_peace_of_mind" />
+
+        <com.cmd.flora.base.BaseTextview
+            android:id="@+id/tv_date_completion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:gravity="start"
+            android:lineSpacingMultiplier="1.5"
+            android:paddingVertical="3dp"
+            android:text="@string/txt_date_completion"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="@+id/tv_current_number"
+            app:layout_constraintTop_toBottomOf="@+id/tv_current_number" />
+
+        <View
+            android:id="@+id/line_page2"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="46dp"
+            android:background="#E5E5E5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_date_completion" />
+
+        <com.cmd.flora.base.BaseTextview
+            android:id="@+id/tv_view_more_history"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="17dp"
+            android:text="@string/view_more_history_of_service"
+            android:textColor="@color/tab_selected_color"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/line_page2" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="46dp"
+            android:indeterminate="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_date_completion" />
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/group_history"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:constraint_referenced_ids="tv_view_more_history,line_page2" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

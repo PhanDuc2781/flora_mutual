@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.cmd.flora.utils.widget.ScreenNameTitle
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:text="@string/what_news"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.cmd.flora.base.BaseTextview
+        android:id="@+id/first"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/bg_new_menu"
+        android:enabled="true"
+        android:gravity="center"
+        android:paddingVertical="14dp"
+        android:text="@string/event_info"
+        android:textColor="@color/btn_new_menu"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/second"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text" />
+
+    <com.cmd.flora.base.BaseTextview
+        android:id="@+id/second"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="4dp"
+        android:background="@drawable/bg_new_menu"
+        android:enabled="false"
+        android:gravity="center"
+        android:text="@string/product_info"
+        android:textColor="@color/btn_new_menu"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/first"
+        app:layout_constraintEnd_toStartOf="@+id/third"
+        app:layout_constraintStart_toEndOf="@+id/first"
+        app:layout_constraintTop_toTopOf="@+id/first" />
+
+    <com.cmd.flora.base.BaseTextview
+        android:id="@+id/third"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="12dp"
+        android:background="@drawable/bg_new_menu"
+        android:enabled="false"
+        android:gravity="center"
+        android:text="@string/notice"
+        android:textColor="@color/btn_new_menu"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/first"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/second"
+        app:layout_constraintTop_toTopOf="@+id/first" />
+
+    <com.cmd.flora.base.BaseTextview
+        android:id="@+id/thirdFirst"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="4dp"
+        android:background="@drawable/bg_new_menu"
+        android:enabled="false"
+        android:gravity="center"
+        android:paddingVertical="14dp"
+        android:text="@string/all"
+        android:textColor="@color/btn_new_menu"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/thirdSecond"
+        app:layout_constraintStart_toStartOf="@id/first"
+        app:layout_constraintTop_toBottomOf="@+id/first" />
+
+    <com.cmd.flora.base.BaseTextview
+        android:id="@+id/thirdSecond"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="4dp"
+        android:background="@drawable/bg_new_menu"
+        android:enabled="true"
+        android:gravity="center"
+        android:text="@string/_private"
+        android:textColor="@color/btn_new_menu"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/thirdFirst"
+        app:layout_constraintEnd_toEndOf="@id/third"
+        app:layout_constraintStart_toEndOf="@+id/thirdFirst"
+        app:layout_constraintTop_toTopOf="@+id/thirdFirst" />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="22dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/thirdFirst">
+
+    </androidx.viewpager2.widget.ViewPager2>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

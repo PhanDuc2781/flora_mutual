@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/homeFragment">
+
+    <action
+        android:id="@+id/actionToEmptyFragment"
+        app:destination="@id/emptyFragment" />
+
+    <action
+        android:id="@+id/actionToDetailFragment"
+        app:destination="@id/detailFragment" />
+    <action
+        android:id="@+id/actionToInquiryFragment"
+        app:destination="@id/inquiryFragment" />
+    <action
+        android:id="@+id/actionToMyPageFragment"
+        app:destination="@id/myPageFragment" />
+
+    <action
+        android:id="@+id/actionToNewsFragment"
+        app:destination="@id/newsFragment" />
+
+    <action
+        android:id="@+id/actionToSettingFragment"
+        app:destination="@id/settingFragment" />
+
+
+    <action
+        android:id="@+id/actionToWeddingFragment"
+        app:destination="@id/weddingFragment" />
+    <action
+        android:id="@+id/actionToCallFragment"
+        app:destination="@id/callFragment" />
+    <action
+        android:id="@+id/actionToFuneralFragment"
+        app:destination="@id/funeralFragment" />
+    <action
+        android:id="@+id/actionToNewsLetterFragment"
+        app:destination="@id/newsLetterFragment" />
+    <fragment
+        android:id="@+id/emptyFragment"
+        android:name="com.cmd.flora.view.empty.EmptyFragment"
+        android:label="EmptyFragment" />
+
+<!--    <fragment-->
+<!--        android:id="@+id/homeTabbarFragment"-->
+<!--        android:name="com.cmd.flora.view.home.HomeTabbarFragment"-->
+<!--        android:label="HomeTabbarFragment"-->
+<!--        tools:layout="@layout/fragment_home_tab" />-->
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.cmd.flora.view.detail.DetailFragment"
+        android:label="DetailFragment" />
+    <fragment
+
+        android:id="@+id/myPageFragment"
+        android:name="com.cmd.flora.view.mypage.MyPageFragment"
+        android:label="fragment_my_page"
+        tools:layout="@layout/fragment_my_page" />
+    <fragment
+        android:id="@+id/newsFragment"
+        android:name="com.cmd.flora.view.news.NewsFragment"
+        android:label="NewsFragment" />
+
+    <fragment
+        android:id="@+id/settingFragment"
+        android:name="com.cmd.flora.view.setting.SettingFragment"
+        android:label="SettingFragment"
+        tools:layout="@layout/fragment_setting" />
+    <fragment
+        android:id="@+id/weddingFragment"
+        android:name="com.cmd.flora.view.wedding.WeddingFragment"
+        android:label="fragment_wedding"
+        tools:layout="@layout/fragment_wedding" />
+    <fragment
+        android:id="@+id/callFragment"
+        android:name="com.cmd.flora.view.call.CallFragment"
+        android:label="CallFragment" />
+    <fragment
+        android:id="@+id/funeralFragment"
+        android:name="com.cmd.flora.view.funeral.FuneralFragment"
+        android:label="fragment_funeral"
+        tools:layout="@layout/fragment_funeral" />
+    <fragment
+        android:id="@+id/inquiryFragment"
+        android:name="com.cmd.flora.view.inquiry.InquiryFragment"
+        android:label="InquiryFragment" />
+    <fragment
+        android:id="@+id/newsLetterFragment"
+        android:name="com.cmd.flora.view.newsletter.NewsLetterFragment"
+        android:label="fragment_news_letter"
+        tools:layout="@layout/fragment_news_letter" />
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.cmd.flora.view.home.HomeFragment"
+        android:label="HomeFragment" />
+</navigation>

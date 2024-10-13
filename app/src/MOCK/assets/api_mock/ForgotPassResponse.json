@@ -1,0 +1,8 @@
+{
+  "title": "OK",
+  "summary": "OK",
+  "status": 200,
+  "detail": {
+    "message": "パスワードリセットのURLをメールでお送りしました。ご確認ください。"
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "title": "ああ",
+      "area": "gifu",
+      "area_display": "岐阜県版",
+      "url": "https://meet.google.com/avc-pzik-sez?authuser=1&hs=122",
+      "issue_at": "2024.01.30発行",
+      "media_count": null,
+      "media_url": "",
+      "image": null,
+      "content": "あ"
+    },
+    {
+      "id": 2,
+      "title": "A",
+      "area": "gifu",
+      "area_display": "岐阜県版",
+      "url": "https://www.flora-g.co.jp/pdf/egao/fuku/20231001_vol22.pdf",
+      "issue_at": "2024.01.24発行",
+      "media_count": null,
+      "media_url": "https://stg.app.flora-g.co.jp/storage/1/conversions/newsletter_image-thumb.jpg",
+      "image": null,
+      "content": "ああ"
+    },
+    {
+      "id": 3,
+      "title": "A",
+      "area": "gifu",
+      "area_display": "岐阜県版",
+      "url": "https://www.flora-g.co.jp/pdf/egao/fuku/20231001_vol22.pdf",
+      "issue_at": "2024.01.24発行",
+      "media_count": null,
+      "media_url": "https://stg.app.flora-g.co.jp/storage/1/conversions/newsletter_image-thumb.jpg",
+      "image": null,
+      "content": "ああ"
+    },
+    {
+      "id": 4,
+      "title": "A",
+      "area": "gifu",
+      "area_display": "岐阜県版",
+      "url": "https://www.flora-g.co.jp/pdf/egao/fuku/20231001_vol22.pdf",
+      "issue_at": "2024.01.24発行",
+      "media_count": null,
+      "media_url": "https://stg.app.flora-g.co.jp/storage/1/conversions/newsletter_image-thumb.jpg",
+      "image": null,
+      "content": "ああ"
+    },
+    {
+      "id": 5,
+      "title": "A",
+      "area": "gifu",
+      "area_display": "岐阜県版",
+      "url": "https://www.flora-g.co.jp/pdf/egao/fuku/20231001_vol22.pdf",
+      "issue_at": "2024.01.24発行",
+      "media_count": null,
+      "media_url": "https://stg.app.flora-g.co.jp/storage/1/conversions/newsletter_image-thumb.jpg",
+      "image": null,
+      "content": "ああ"
+    }
+  ],
+  "links": {
+    "first": "https://49.212.174.96/api/newsletter?page=1",
+    "last": "https://49.212.174.96/api/newsletter?page=1",
+    "prev": null,
+    "next": null
+  },
+  "meta": {
+    "current_page": 1,
+    "from": 1,
+    "last_page": 1,
+    "links": [
+      {
+        "url": null,
+        "label": "&laquo; 前",
+        "active": false
+      },
+      {
+        "url": "https://49.212.174.96/api/newsletter?page=1",
+        "label": "1",
+        "active": true
+      },
+      {
+        "url": null,
+        "label": "次 &raquo;",
+        "active": false
+      }
+    ],
+    "path": "https://49.212.174.96/api/newsletter",
+    "per_page": 10,
+    "to": 2,
+    "total": 2
+  }
+}

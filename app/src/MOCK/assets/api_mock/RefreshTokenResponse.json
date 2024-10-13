@@ -1,0 +1,5 @@
+{
+  "access_token": "abcdefghiklm123456789",
+  "token_type": "bearer",
+  "expires_in": 3600
+}

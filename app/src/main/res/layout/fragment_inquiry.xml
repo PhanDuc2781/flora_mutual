@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <com.cmd.flora.utils.widget.ScreenNameTitle
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:text="@string/inquiry_title" />
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrollLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/scrollContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/_80dp">
+
+            <FrameLayout
+                android:id="@+id/callLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <include
+                    android:id="@+id/callItem"
+                    layout="@layout/item_home_call" />
+            </FrameLayout>
+
+            <com.cmd.flora.base.BaseTextview
+                android:id="@+id/fillAndEnter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="12dp"
+                android:lineSpacingExtra="6dp"
+                android:text="@string/fill_and_enter"
+                android:textColor="@color/black"
+                android:textSize="14dp"
+                app:layout_constraintTop_toBottomOf="@+id/callLayout" />
+
+            <com.cmd.flora.base.BaseTextview
+                android:id="@+id/note"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="12dp"
+                android:layout_marginTop="6dp"
+                android:lineSpacingExtra="6dp"
+                android:text="@string/note_fill"
+                android:textColor="#00B95A"
+                android:textSize="14dp"
+                app:layout_constraintTop_toBottomOf="@+id/fillAndEnter" />
+
+            <View
+                android:id="@+id/bgView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginHorizontal="12dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/bg_radius_20_white"
+                app:layout_constraintBottom_toBottomOf="@+id/space"
+                app:layout_constraintTop_toBottomOf="@+id/note" />
+
+            <com.cmd.flora.utils.widget.CustomInputView
+                android:id="@+id/input1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="28dp"
+                app:inputHeight="68"
+                app:input_type="text"
+                app:isDropdown="true"
+                app:layout_constraintEnd_toEndOf="@+id/bgView"
+                app:layout_constraintStart_toStartOf="@+id/bgView"
+                app:layout_constraintTop_toTopOf="@+id/bgView"
+                app:title="@string/content_inquiry" />
+
+            <com.cmd.flora.utils.widget.CustomInputView
+                android:id="@+id/input2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:inputHeight="45"
+                app:input_type="text"
+                app:isDropdown="true"
+                app:layout_constraintEnd_toEndOf="@+id/input1"
+                app:layout_constraintStart_toStartOf="@+id/input1"
+                app:layout_constraintTop_toBottomOf="@+id/input1"
+                app:title="@string/contact_info" />
+
+            <com.cmd.flora.utils.widget.CustomInputView
+                android:id="@+id/input3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:hint="@string/hint_name"
+                app:layout_constraintEnd_toEndOf="@+id/input2"
+                app:layout_constraintStart_toStartOf="@+id/input2"
+                app:layout_constraintTop_toBottomOf="@+id/input2"
+                app:validateMessage="@string/validate_name" />
+
+            <com.cmd.flora.utils.widget.CustomInputView
+                android:id="@+id/input4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:hint="@string/hint_name_2"
+                app:input_type="text"
+                app:layout_constraintEnd_toEndOf="@+id/input3"
+                app:layout_constraintStart_toStartOf="@+id/input3"
+                app:layout_constraintTop_toBottomOf="@+id/input3"
+                app:validateMessage="@string/validate_name_2" />
+
+            <com.cmd.flora.utils.widget.CustomInputView
+                android:id="@+id/input5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:hint="@string/hint_phone"
+                app:input_type="phone"
+                app:layout_constraintEnd_toEndOf="@+id/input4"
+                app:layout_constraintStart_toStartOf="@+id/input4"
+                app:layout_constraintTop_toBottomOf="@+id/input4"
+                app:validateMessage="@string/validate_phone" />
+
+            <com.cmd.flora.utils.widget.CustomInputView
+                android:id="@+id/input6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:hint="@string/hint_email"
+                app:input_type="email"
+                app:layout_constraintEnd_toEndOf="@+id/input5"
+                app:layout_constraintStart_toStartOf="@+id/input5"
+                app:layout_constraintTop_toBottomOf="@+id/input5"
+                app:validateMessage="@string/validate_email" />
+
+            <com.cmd.flora.utils.widget.CustomInputView
+                android:id="@+id/input7"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:hint="@string/hint_post_code"
+                app:input_type="number"
+                app:layout_constraintEnd_toEndOf="@+id/input6"
+                app:layout_constraintStart_toStartOf="@+id/input6"
+                app:layout_constraintTop_toBottomOf="@+id/input6"
+                app:validateMessage="@string/validate_post_code_format" />
+
+            <com.cmd.flora.utils.widget.CustomInputView
+                android:id="@+id/input8"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:inputHeight="68"
+                app:isDropdown="true"
+                app:layout_constraintEnd_toEndOf="@+id/input7"
+                app:layout_constraintStart_toStartOf="@+id/input7"
+                app:layout_constraintTop_toBottomOf="@+id/input7"
+                app:title="@string/prefectures" />
+
+            <com.cmd.flora.utils.widget.CustomInputView
+                android:id="@+id/input9"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:hint="@string/hint_municipalities"
+                app:input_type="text"
+                app:layout_constraintEnd_toEndOf="@+id/input8"
+                app:layout_constraintStart_toStartOf="@+id/input8"
+                app:layout_constraintTop_toBottomOf="@+id/input8" />
+
+            <com.cmd.flora.utils.widget.CustomInputView
+                android:id="@+id/input10"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:hint="@string/hint_street"
+                app:input_type="text"
+                app:layout_constraintEnd_toEndOf="@+id/input9"
+                app:layout_constraintStart_toStartOf="@+id/input9"
+                app:layout_constraintTop_toBottomOf="@+id/input9" />
+
+            <com.cmd.flora.utils.widget.CustomInputView
+                android:id="@+id/input11"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:hint="@string/hint_inquiry"
+                app:inputHeight="192"
+                app:input_type="text"
+                app:isSingleLine="false"
+                app:layout_constraintEnd_toEndOf="@+id/input10"
+                app:layout_constraintStart_toStartOf="@+id/input10"
+                app:layout_constraintTop_toBottomOf="@+id/input10"
+                app:maxCharacterCount="1000"
+                app:validateMessage="@string/validate_inquiry" />
+
+            <com.cmd.flora.base.BaseTextview
+                android:id="@+id/errorMessage"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text=""
+                android:textColor="@color/error_message"
+                android:textSize="11dp"
+                android:visibility="gone"
+                app:layout_constrainedWidth="true"
+                app:layout_constraintEnd_toEndOf="@+id/input11"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintStart_toStartOf="@+id/input11"
+                app:layout_constraintTop_toBottomOf="@+id/input11" />
+
+            <CheckBox
+                android:id="@+id/checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:buttonTint="@color/checkbox_color_state"
+                app:layout_constraintEnd_toStartOf="@+id/checkboxContent"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/errorMessage" />
+
+            <com.cmd.flora.base.BaseTextview
+                android:id="@+id/checkboxContent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/hiragino_kaku_gothic_pro_w3"
+                android:includeFontPadding="false"
+                android:text="@string/agree_policy_checkbox"
+                android:textColor="@color/black"
+                android:textSize="13dp"
+                app:layout_constraintBottom_toBottomOf="@+id/checkbox"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintStart_toEndOf="@+id/checkbox"
+                app:layout_constraintTop_toTopOf="@+id/checkbox" />
+
+            <Button
+                android:id="@+id/btnSend"
+                android:layout_width="0dp"
+                android:layout_height="52dp"
+                android:layout_marginHorizontal="32dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/bg_btn_state"
+                android:enabled="false"
+                android:fontFamily="@font/hiragino_kaku_gothic_pro_w3"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:text="@string/action_send"
+                android:textColor="@color/btn_color_state"
+                android:textSize="16dp"
+                app:layout_constraintEnd_toEndOf="@+id/bgView"
+                app:layout_constraintStart_toStartOf="@+id/bgView"
+                app:layout_constraintTop_toBottomOf="@+id/checkbox" />
+
+            <Space
+                android:id="@+id/space"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnSend" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <View
+        android:id="@+id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

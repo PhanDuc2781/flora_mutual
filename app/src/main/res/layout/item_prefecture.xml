@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/parent"
+    android:paddingHorizontal="2dp"
+    android:orientation="horizontal">
+
+    <com.cmd.flora.base.BaseTextview
+        android:id="@+id/tv_prefecture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_new_menu"
+        android:enabled="true"
+        android:gravity="center"
+        android:paddingVertical="13dp"
+        android:text="@string/fukushima_prefecture"
+        android:textColor="@color/btn_new_menu"
+        android:textSize="14dp"
+        android:textStyle="bold" />
+</FrameLayout>

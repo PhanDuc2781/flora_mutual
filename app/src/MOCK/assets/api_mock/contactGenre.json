@@ -1,0 +1,24 @@
+{
+  "data": [
+    {
+      "label": "A",
+      "value": "A問い合わせ"
+    },
+    {
+      "label": "B",
+      "value": "B問い合わせ"
+    },
+    {
+      "label": "C",
+      "value": "C問い合わせ"
+    },
+    {
+      "label": "D",
+      "value": "D問い合わせ"
+    },
+    {
+      "label": "E",
+      "value": "E問い合わせ"
+    }
+  ]
+}

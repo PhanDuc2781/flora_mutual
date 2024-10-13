@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.cmd.flora.base.BaseTextview xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/text"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="26dp"
+    android:text="@string/telephone_inquiries"
+    android:textAlignment="center"
+    android:textColor="@color/tab_selected_color"
+    android:textSize="22dp"
+    android:textStyle="bold" />

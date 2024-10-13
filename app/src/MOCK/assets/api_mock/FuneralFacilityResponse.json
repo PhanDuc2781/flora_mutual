@@ -1,0 +1,296 @@
+{
+  "data": [
+    {
+      "id": 7,
+      "facility_code": "shibata",
+      "name": "フローラメモリアルホール柴田",
+      "description": "施設説明",
+      "zip": "7368811",
+      "prefecture": "岐阜県",
+      "address": "住所",
+      "tel": "000-0000-0000",
+      "genre": "funeral",
+      "genre_display": "メモリアルホール",
+      "url": "",
+      "tags": [
+        {
+          "id": "3",
+          "name": "駐車場あり",
+          "type": "facility"
+        },
+        {
+          "id": "1",
+          "name": "収容人数300人",
+          "type": "facility"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "facility_code": "shibata_kazoku",
+      "name": "フローラメモリアルホール柴田 家族葬会場",
+      "description": "施設説明",
+      "zip": "2607080",
+      "prefecture": "福島県",
+      "address": "住所",
+      "tel": "000-0000-0000",
+      "genre": "funeral",
+      "genre_display": "メモリアルホール",
+      "url": "",
+      "tags": [
+        {
+          "id": "5",
+          "name": "無料送迎バスあり",
+          "type": "facility"
+        },
+        {
+          "id": "1",
+          "name": "収容人数300人",
+          "type": "facility"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "facility_code": "kawasaki",
+      "name": "フローラメモリアルホール川崎",
+      "description": "施設説明",
+      "zip": "3282860",
+      "prefecture": "岐阜県",
+      "address": "住所",
+      "tel": "000-0000-0000",
+      "genre": "funeral",
+      "genre_display": "メモリアルホール",
+      "url": "",
+      "tags": [
+        {
+          "id": "2",
+          "name": "ICから5分",
+          "type": "facility"
+        },
+        {
+          "id": "1",
+          "name": "収容人数300人",
+          "type": "facility"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "facility_code": "kakuta",
+      "name": "フローラメモリアルホール角田",
+      "description": "施設説明",
+      "zip": "9864889",
+      "prefecture": "岐阜県",
+      "address": "住所",
+      "tel": "000-0000-0000",
+      "genre": "funeral",
+      "genre_display": "メモリアルホール",
+      "url": "",
+      "tags": [
+        {
+          "id": "4",
+          "name": "バリアフリー",
+          "type": "facility"
+        },
+        {
+          "id": "1",
+          "name": "収容人数300人",
+          "type": "facility"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "facility_code": "sakura",
+      "name": "フローラメモリアルホール桜",
+      "description": "施設説明",
+      "zip": "1144079",
+      "prefecture": "岐阜県",
+      "address": "住所",
+      "tel": "000-0000-0000",
+      "genre": "funeral",
+      "genre_display": "メモリアルホール",
+      "url": "",
+      "tags": [
+        {
+          "id": "1",
+          "name": "収容人数300人",
+          "type": "facility"
+        },
+        {
+          "id": "4",
+          "name": "バリアフリー",
+          "type": "facility"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "facility_code": "haramachi",
+      "name": "フローラメモリアルホール原町",
+      "description": "施設説明",
+      "zip": "7981522",
+      "prefecture": "岐阜県",
+      "address": "住所",
+      "tel": "000-0000-0000",
+      "genre": "funeral",
+      "genre_display": "メモリアルホール",
+      "url": "",
+      "tags": [
+        {
+          "id": "1",
+          "name": "収容人数300人",
+          "type": "facility"
+        },
+        {
+          "id": "3",
+          "name": "駐車場あり",
+          "type": "facility"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "facility_code": "souma",
+      "name": "フローラメモリアルホール相馬",
+      "description": "施設説明",
+      "zip": "3815673",
+      "prefecture": "岐阜県",
+      "address": "住所",
+      "tel": "000-0000-0000",
+      "genre": "funeral",
+      "genre_display": "メモリアルホール",
+      "url": "",
+      "tags": [
+        {
+          "id": "5",
+          "name": "無料送迎バスあり",
+          "type": "facility"
+        },
+        {
+          "id": "1",
+          "name": "収容人数300人",
+          "type": "facility"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "facility_code": "ogawara",
+      "name": "フローラメモリアルホール大河原",
+      "description": "施設説明",
+      "zip": "8375556",
+      "prefecture": "宮城県",
+      "address": "住所",
+      "tel": "000-0000-0000",
+      "genre": "funeral",
+      "genre_display": "メモリアルホール",
+      "url": "",
+      "tags": [
+        {
+          "id": "3",
+          "name": "駐車場あり",
+          "type": "facility"
+        },
+        {
+          "id": "1",
+          "name": "収容人数300人",
+          "type": "facility"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "facility_code": "ookuma",
+      "name": "フローラメモリアルホールおおくま",
+      "description": "施設説明",
+      "zip": "5054182",
+      "prefecture": "岐阜県",
+      "address": "住所",
+      "tel": "000-0000-0000",
+      "genre": "funeral",
+      "genre_display": "メモリアルホール",
+      "url": "",
+      "tags": [
+        {
+          "id": "1",
+          "name": "収容人数300人",
+          "type": "facility"
+        },
+        {
+          "id": "2",
+          "name": "ICから5分",
+          "type": "facility"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "facility_code": "watari",
+      "name": "フローラメモリアルホール亘理",
+      "description": "施設説明",
+      "zip": "1282786",
+      "prefecture": "宮城県",
+      "address": "住所",
+      "tel": "000-0000-0000",
+      "genre": "funeral",
+      "genre_display": "メモリアルホール",
+      "url": "",
+      "tags": [
+        {
+          "id": "2",
+          "name": "ICから5分",
+          "type": "facility"
+        },
+        {
+          "id": "4",
+          "name": "バリアフリー",
+          "type": "facility"
+        }
+      ]
+    }
+  ],
+  "links": {
+    "first": "https://49.212.174.96/api/v1/facility?page=1",
+    "last": "https://49.212.174.96/api/v1/facility?page=3",
+    "prev": null,
+    "next": "https://49.212.174.96/api/v1/facility?page=2"
+  },
+  "meta": {
+    "current_page": 1,
+    "from": 1,
+    "last_page": 3,
+    "links": [
+      {
+        "url": null,
+        "label": "&laquo; 前",
+        "active": false
+      },
+      {
+        "url": "https://49.212.174.96/api/v1/facility?page=1",
+        "label": "1",
+        "active": true
+      },
+      {
+        "url": "https://49.212.174.96/api/v1/facility?page=2",
+        "label": "2",
+        "active": false
+      },
+      {
+        "url": "https://49.212.174.96/api/v1/facility?page=3",
+        "label": "3",
+        "active": false
+      },
+      {
+        "url": "https://49.212.174.96/api/v1/facility?page=2",
+        "label": "次 &raquo;",
+        "active": false
+      }
+    ],
+    "path": "https://49.212.174.96/api/v1/facility",
+    "per_page": 10,
+    "to": 10,
+    "total": 21
+  }
+}

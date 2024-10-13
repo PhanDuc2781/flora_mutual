@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_login"
+    app:startDestination="@id/loginFragment">
+
+    <action
+        android:id="@+id/actionToLoginFragement"
+        app:destination="@id/loginFragment" />
+    <action
+        android:id="@+id/actionToResetPassFragment"
+        app:destination="@id/resetPassFragment" />
+
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.cmd.flora.view.authen.fragment.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_loginFragment_to_forgotPasswordFragment"
+            app:destination="@id/forgotPasswordFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/forgotPasswordFragment"
+        android:name="com.cmd.flora.view.authen.fragment.ForgotPasswordFragment"
+        android:label="fragment_reset_password"
+        tools:layout="@layout/fragment_forgot_password">
+        <action
+            app:popUpTo="@id/loginFragment"
+            app:popUpToInclusive="false"
+            android:id="@+id/action_forgotPasswordFragment_to_forgotPassDoneFragment"
+            app:destination="@id/forgotPassDoneFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/forgotPassDoneFragment"
+        android:name="com.cmd.flora.view.authen.fragment.ForgotDonePasswordFr"
+        android:label="fragment_reset_password2"
+        tools:layout="@layout/fragment_forgot_password_done">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/resetPassFragment"
+        android:name="com.cmd.flora.view.authen.fragment.resetpass.ResetPassFragment"
+        android:label="fragment_reset_pass"
+        tools:layout="@layout/fragment_reset_pass">
+        <action
+            android:id="@+id/action_resetPassFragment_to_resetPassDoneFragment"
+            app:destination="@id/resetPassDoneFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/resetPassDoneFragment"
+        android:name="com.cmd.flora.view.authen.fragment.resetpass.ResetPassDoneFragment"
+        android:label="fragment_reset_pass_done"
+        tools:layout="@layout/fragment_reset_pass_done" />
+</navigation>

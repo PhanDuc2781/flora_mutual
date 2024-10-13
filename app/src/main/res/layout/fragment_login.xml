@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_login">
+
+    <com.cmd.flora.utils.widget.header.BackHeaderView
+        android:id="@+id/back_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/back_login"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.cmd.flora.utils.widget.ScreenNameTitle
+                android:id="@+id/baseTextview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:text="@string/login" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="26dp"
+                android:layout_marginEnd="14dp"
+                android:background="@drawable/bg_form_login"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/baseTextview"
+                tools:ignore="MissingConstraints">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_id"
+                    style="@style/text_login"
+                    android:letterSpacing="0"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_marginStart="19dp"
+                    android:layout_marginTop="27dp"
+                    android:layout_marginEnd="19dp"
+                    android:background="@drawable/bg_rounder_edt_login"
+                    android:digits="0123456789"
+                    android:maxLength="6"
+                    android:fontFamily="@font/hiragino_kaku_gothic_pro_w6"
+                    android:hint="@string/userId"
+                    android:imeOptions="actionNext"
+                    android:inputType="phone"
+                    android:paddingStart="15dp"
+                    android:singleLine="true"
+                    android:textColor="@color/text_login_color"
+                    android:textColorHint="@color/text_login_color"
+                    android:textSize="16dp" />
+
+                <com.cmd.flora.base.BaseTextview
+                    android:id="@+id/txt_error_account_ID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:lineSpacingExtra="5dp"
+                    android:textColor="@color/error_message"
+                    android:textSize="13dp"
+                    android:visibility="gone" />
+
+
+                <com.cmd.flora.base.BaseTextview
+                    android:id="@+id/baseTextview2"
+                    style="@style/text_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginEnd="20dp"
+                    android:lineSpacingExtra="5dp"
+                    android:text="@string/noti_UserId"
+                    android:textSize="13dp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="19dp"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginEnd="19dp"
+                    app:hintEnabled="false"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/baseTextview2"
+                    app:passwordToggleEnabled="true"
+                    app:passwordToggleTint="#0DA053"
+                    app:passwordToggleDrawable="@drawable/password_visibility_selector"
+                    tools:ignore="MissingConstraints">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edt_password"
+                        style="@style/text_login"
+                        android:letterSpacing="0"
+                        android:layout_width="match_parent"
+                        android:layout_height="65dp"
+                        android:background="@drawable/bg_rounder_edt_login"
+                        android:fontFamily="@font/hiragino_kaku_gothic_pro_w6"
+                        android:hint="@string/password"
+                        android:imeOptions="actionDone"
+                        android:inputType="textPassword"
+                        android:paddingLeft="15dp"
+                        android:singleLine="true"
+                        android:textColor="@color/text_login_color"
+                        android:textColorHint="@color/text_login_color"
+                        android:textSize="16dp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.cmd.flora.base.BaseTextview
+                    android:id="@+id/txt_error_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:lineSpacingExtra="5dp"
+                    android:textColor="@color/error_message"
+                    android:textSize="13dp"
+                    android:visibility="gone" />
+
+                <com.cmd.flora.base.BaseTextview
+                    android:id="@+id/baseTextview3"
+                    style="@style/text_login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="18dp"
+                    android:text="@string/remember_account"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
+                    tools:ignore="MissingConstraints" />
+
+                <com.cmd.flora.base.BaseTextview
+                    android:id="@+id/baseTextview5"
+                    style="@style/text_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="17dp"
+                    android:layout_marginEnd="34dp"
+                    android:fontFamily="@font/hiragino_kaku_gothic_pro_w3"
+                    android:lineSpacingExtra="5dp"
+                    android:text="@string/noti_password"
+                    android:textSize="13dp" />
+
+                <com.cmd.flora.base.BaseTextview
+                    android:id="@+id/btn_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:layout_marginStart="19dp"
+                    android:layout_marginTop="38dp"
+                    android:layout_marginEnd="19dp"
+                    android:background="@drawable/bg_disable_btn_login"
+                    android:enabled="false"
+                    android:gravity="center"
+                    android:text="@string/login"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+
+                <com.cmd.flora.base.BaseTextview
+                    android:id="@+id/txt_forgot_password"
+                    style="@style/text_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="26dp"
+                    android:layout_marginBottom="33dp"
+                    android:gravity="center"
+                    android:paddingVertical="8dp"
+                    android:text="@string/forgot_password"
+                    android:textSize="15dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btn_login"
+                    tools:ignore="MissingConstraints" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

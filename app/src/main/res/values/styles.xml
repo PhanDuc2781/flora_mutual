@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="TabBarItemView">
+        <attr name="tab_icon" format="integer" />
+        <attr name="tab_text" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="TabBarView">
+        <attr name="default_color" format="color" />
+        <attr name="selected_color" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="CustomSwitchView">
+        <attr name="defaultColor" format="color" />
+        <attr name="selectedColor" format="color" />
+        <attr name="isChecked" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="CustomInputView">
+        <attr name="title" format="string" />
+        <attr name="hint" format="string" />
+        <attr name="validateMessage" format="string" />
+        <attr name="isSingleLine" format="boolean" />
+        <attr name="isDropdown" format="boolean" />
+        <attr name="maxCharacterCount" format="integer" />
+        <attr name="inputHeight" format="integer" />
+
+        <attr name="input_type" format="enum">
+            <enum name="text" value="0" />
+            <enum name="email" value="1" />
+            <enum name="number" value="2" />
+            <enum name="phone" value="3" />
+        </attr>
+    </declare-styleable>
+
+    <style name="DefaultNumberPickerTheme" parent="Theme.FloraMutual">
+        <item name="android:textColorPrimary">@color/black</item>
+        <item name="colorControlNormal">@android:color/transparent</item>
+        <item name="android:textSize">14dp</item> // add if you want to change size
+        <item name="android:fontFamily">@font/hiragino_kaku_gothic_pro_w6</item>
+    </style>
+
+    <style name="customRoundedImageView" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">10dp</item>
+    </style>
+
+    <style name="text_login">
+        <item name="android:textColor">@color/text_login_color</item>
+        <item name="android:letterSpacing">-0.1</item>
+    </style>
+
+    <style name="textSetting" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingStart">28dp</item>
+    </style>
+
+    <style name="RobotoTextViewStyle" parent="android:Widget.TextView">
+        <item name="android:fontFamily">@font/hiragino_kaku_gothic_pro_w3</item>
+    </style>
+</resources>

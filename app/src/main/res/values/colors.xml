@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="primaryColor">#B2D9CA</color>
+
+    <color name="tab_selected_color">#5EB68B</color>
+    <color name="menu_line_color">#CFEADF</color>
+    <color name="color_tutorial">#E7F3DE</color>
+    <color name="text_login_color">#4D4D4D</color>
+    <color name="bg_login">#EEF5F2</color>
+    <color name="color_web_nav">#99626262</color>
+    <color name="error_message">#FD0000</color>
+    <color name="color_bg_home">#EEF5F2</color>
+    <color name="color_62">#626262</color>
+    <color name="color_F08D5B">#F08D5B</color>
+    <color name="color_e5">#E5E5E5</color>
+    <color name="color_divider">#E5E5E5</color>
+    <color name="color_f5">#F5F5F5</color>
+
+    <color name="shadow_view_default_shadow_color">#DCDDE0</color>
+    <color name="shadow_view_foreground_color_dark">#1f000000</color>
+</resources>
