@@ -90,10 +90,7 @@ class LoginFragment :
         }
 
         viewModel.errorMessageRequest.observe(viewLifecycleOwner) {
-<<<<<<< HEAD
-=======
             if (it.isEmpty()) return@observe
->>>>>>> 19f69cb82a1f2f5a2f30fa6c5f44172ba5fad5cc
             mActivity?.showCustomAlertDialog(AlertData(msg = it, posTitle = getString(R.string.ok)))
         }
 

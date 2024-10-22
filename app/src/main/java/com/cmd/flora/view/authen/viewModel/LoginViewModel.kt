@@ -104,20 +104,17 @@ class LoginViewModel @Inject constructor(
         errorMessage?.let {
             when (HTTPError.from(it)?.code) {
                 HTTPError.UNAUTHORISE.code -> {
-<<<<<<< HEAD
                     errorMessageRequest.postValue(MessageError.MSG_ERROR_LOGIN_REQUEST)
                 }
 
                 HTTPError.BAD_REQUEST.code -> {
                     errorMessageRequest.postValue("")
-=======
 //                    errorMessageRequest.postValue("")
                     validatePassword.postValue(MessageError.INVALID_PASSWORD_MESSAGE)
                 }
 
                 HTTPError.BAD_REQUEST.code -> {
                     errorMessageRequest.postValue(MessageError.MSG_ERROR_LOGIN_REQUEST)
->>>>>>> 19f69cb82a1f2f5a2f30fa6c5f44172ba5fad5cc
                 }
                 //more code here
 

@@ -8,11 +8,7 @@
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
 
     <application
-<<<<<<< HEAD
-        android:name=".application.MainApplication"
-=======
         android:name="com.cmd.flora.application.MainApplication"
->>>>>>> 19f69cb82a1f2f5a2f30fa6c5f44172ba5fad5cc
         android:allowBackup="false"
         android:hardwareAccelerated="true"
         android:icon="@mipmap/ic_launcher"
@@ -31,40 +27,24 @@
             android:value="false"/>
 
         <activity
-<<<<<<< HEAD
-            android:name=".view.authen.activity.LoginActivity"
-=======
             android:name="com.cmd.flora.view.authen.activity.LoginActivity"
->>>>>>> 19f69cb82a1f2f5a2f30fa6c5f44172ba5fad5cc
             android:exported="true"
             android:launchMode="singleTask"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.QR" />
         <activity
-<<<<<<< HEAD
-            android:name=".view.addmail.AddEmailActivity"
-=======
             android:name="com.cmd.flora.view.addmail.AddEmailActivity"
->>>>>>> 19f69cb82a1f2f5a2f30fa6c5f44172ba5fad5cc
             android:exported="false"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.QR" />
         <activity
-<<<<<<< HEAD
-            android:name=".view.tutorial.TutorialActivity"
-=======
             android:name="com.cmd.flora.view.tutorial.TutorialActivity"
->>>>>>> 19f69cb82a1f2f5a2f30fa6c5f44172ba5fad5cc
             android:exported="false"
             android:launchMode="singleTask"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.Tutorial" />
         <activity
-<<<<<<< HEAD
-            android:name=".view.main.MainActivity"
-=======
             android:name="com.cmd.flora.view.main.MainActivity"
->>>>>>> 19f69cb82a1f2f5a2f30fa6c5f44172ba5fad5cc
             android:exported="true"
             android:launchMode="singleTask"
             android:screenOrientation="portrait"
@@ -81,38 +61,22 @@
             </intent-filter>
         </activity>
         <activity
-<<<<<<< HEAD
-            android:name=".view.webview.WebViewActivity"
-=======
             android:name="com.cmd.flora.view.webview.WebViewActivity"
->>>>>>> 19f69cb82a1f2f5a2f30fa6c5f44172ba5fad5cc
             android:launchMode="singleTask"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.FloraMutual" />
         <activity
-<<<<<<< HEAD
-            android:name=".view.qrscreen.QRActivity"
-=======
             android:name="com.cmd.flora.view.qrscreen.QRActivity"
->>>>>>> 19f69cb82a1f2f5a2f30fa6c5f44172ba5fad5cc
             android:launchMode="singleTask"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.QR" />
         <activity
-<<<<<<< HEAD
-            android:name=".view.fullscreenalert.FullScreenAlertActivity"
-=======
             android:name="com.cmd.flora.view.fullscreenalert.FullScreenAlertActivity"
->>>>>>> 19f69cb82a1f2f5a2f30fa6c5f44172ba5fad5cc
             android:launchMode="singleTask"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.QR" />
         <activity
-<<<<<<< HEAD
-            android:name=".view.splash.SplashActivity"
-=======
             android:name="com.cmd.flora.view.splash.SplashActivity"
->>>>>>> 19f69cb82a1f2f5a2f30fa6c5f44172ba5fad5cc
             android:exported="true"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.Splash">
@@ -124,11 +88,7 @@
         </activity>
 
         <service
-<<<<<<< HEAD
-            android:name=".utils.MyFirebaseMessagingService"
-=======
             android:name="com.cmd.flora.utils.MyFirebaseMessagingService"
->>>>>>> 19f69cb82a1f2f5a2f30fa6c5f44172ba5fad5cc
             android:exported="false">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />

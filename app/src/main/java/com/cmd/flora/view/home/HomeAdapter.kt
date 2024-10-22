@@ -276,11 +276,7 @@ class HomeAdapter(
                         size(320, 320)
                     }
                     holder.binding.message.text = data.newResponse.message
-<<<<<<< HEAD
-                    holder.binding.description.text = data.newResponse.description
-=======
                     holder.binding.description.text = data.newResponse.description?.trim()
->>>>>>> 19f69cb82a1f2f5a2f30fa6c5f44172ba5fad5cc
                 }
             }
 

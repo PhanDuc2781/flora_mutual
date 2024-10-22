@@ -80,11 +80,7 @@ class InquiryFragment :
         binding.btnSend.setOnSingleClickListener {
             viewModel.sendContact(
                 ContactInformationRequestModel(
-<<<<<<< HEAD
                     user_id = userInformation?.value?.member_code,
-=======
-                    user_id = null,
->>>>>>> 19f69cb82a1f2f5a2f30fa6c5f44172ba5fad5cc
                     genre = viewModel.input1.value?.second,
                     facility_id = viewModel.input2.value?.second,
                     name = binding.input3.value,

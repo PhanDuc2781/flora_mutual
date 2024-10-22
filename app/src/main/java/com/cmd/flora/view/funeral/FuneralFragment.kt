@@ -38,12 +38,9 @@ class FuneralFragment : BaseVMFragment<FragmentFuneralBinding, FacilityViewModel
         super.initView()
 
         prefectureAdapter = PrefectureAdapter { index ->
-<<<<<<< HEAD
             binding.viewpager.currentItem = index
             prefectureAdapter.setSelected(index)
-=======
             viewModel.currentSelected.postValue(index)
->>>>>>> 19f69cb82a1f2f5a2f30fa6c5f44172ba5fad5cc
         }
 
         binding.recyclerPrefecture.adapter = prefectureAdapter
@@ -53,14 +50,11 @@ class FuneralFragment : BaseVMFragment<FragmentFuneralBinding, FacilityViewModel
             prefectureAdapter.submitList(it)
             binding.viewpager.setUpData(this, it.size)
         }
-<<<<<<< HEAD
-=======
 
         viewModel.currentSelected.observe(this) {
             binding.viewpager.currentItem = it
             prefectureAdapter.setSelected(it)
         }
->>>>>>> 19f69cb82a1f2f5a2f30fa6c5f44172ba5fad5cc
     }
 
     override fun onResume() {
@@ -88,10 +82,7 @@ class FacilityViewModel @Inject constructor(
     private val facilityInformationRepository: FacilityInformationRepository,
 ) : BaseViewModel() {
     var loadPrefecture = true
-<<<<<<< HEAD
-=======
     val currentSelected = MutableLiveData<Int>(0)
->>>>>>> 19f69cb82a1f2f5a2f30fa6c5f44172ba5fad5cc
     val prefectureLiveData = MutableLiveData<List<Prefecture>>()
     suspend fun getValues(idx: Int, page: Int): Result<Pair<List<FacilityView>, Boolean>> {
         return when (idx) {
